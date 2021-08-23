@@ -1,31 +1,24 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-invalid-esm-entrypoint",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "format": "prettier --write .",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "gatsby": "^3.11.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "gatsby": "3.12.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "7.15.0",
+    "@babel/eslint-parser": "7.15.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.1",
+    "eslint-plugin-react": "7.24.0",
     "prettier": "2.3.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
